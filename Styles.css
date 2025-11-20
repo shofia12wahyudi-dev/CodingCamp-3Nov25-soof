@@ -1,10 +1,20 @@
 /* ========== GLOBAL STYLE ========== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    backdrop-filter: blur(12px);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 
 body {
     background: #faf6ff;
@@ -67,19 +77,8 @@ nav ul li a:hover {
     color: #6b21a8;
 }
 
-/* ========== BURGER MENU (HP) ========== */
-.burger {
-    display: none;
-    cursor: pointer;
-}
 
-.burger div {
-    width: 28px;
-    height: 3px;
-    background: #6b21a8;
-    margin: 5px;
-    border-radius: 5px;
-}
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -108,24 +107,15 @@ nav ul li a:hover {
     }
 }
 
-/* Burger for mobile (optional) */
-.burger div {
-    width: 25px;
-    height: 3px;
-    background: white;
-    margin: 5px;
-    border-radius: 5px;
-    display: none;
-}
 
 /* ========== HERO SECTION ========== */
 #hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
-    
+    padding-top: 120px; /* Tambahin jarak */
 }
+
 
 .hero-left h1 {
     font-size: 40px;
